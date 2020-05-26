@@ -36,6 +36,15 @@ const queryUsers = gql `
         }
     }
 `
+const queryProfile = gql `
+    query {
+        me {
+            id
+            name
+            email
+        }
+    }
+`
 
 export {
     createUser,
